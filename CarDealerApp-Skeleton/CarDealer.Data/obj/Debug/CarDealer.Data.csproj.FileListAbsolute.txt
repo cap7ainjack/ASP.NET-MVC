@@ -1,0 +1,14 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.dll.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Models.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Models.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.Migrations.InitialCreate.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\C-Sharp-MVC\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.csproj.GenerateResource.Cache
