@@ -8,12 +8,15 @@ using System.Web;
 using System.Web.Mvc;
 using CarDealer.Data;
 using CarDealer.Models;
+using CarDealerApp.Models.BindingModels;
+using CarDealerApp.Services;
 
 namespace CarDealerApp.Controllers
 {
     public class CarsController : Controller
     {
         private CarDealerContext db = new CarDealerContext();
+        private CarsService service = new CarsService();
 
         // GET: Cars
         public ActionResult Index()
@@ -59,6 +62,7 @@ namespace CarDealerApp.Controllers
         }
 
         // GET: Cars/Create
+        //[Authorize]
         public ActionResult Create()
         {
             return View();
@@ -69,13 +73,15 @@ namespace CarDealerApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Make,Model,TravelledDistance")] Car car)
+        public ActionResult Create([Bind(Include = "Make, Model, TravelledDistance, Part1, Part2, Part3")] NewCarBindingModel car)
         {
+            Car newCar = service.AddNewCar(car, db);
+
             if (ModelState.IsValid)
             {
-                db.Cars.Add(car);
+                db.Cars.Add(newCar);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return Redirect("/Cars");
             }
 
             return View(car);

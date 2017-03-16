@@ -1,17 +1,24 @@
-﻿@model CarDealer.Models.User
+﻿@model bool?
 
 @{
     ViewBag.Title = "Register";
 }
 
 
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-<form class="form-horizontal" action='' method="POST">
     <fieldset>
         <div id="legend">
             <br />
             <legend class="">Register</legend>
         </div>
+
+        @if (Model != null && Model == true)
+        {
+            <h2>E-mail already taken!</h2>
+        }
 
         <div class="control-group">
             <!-- E-mail -->
@@ -56,6 +63,6 @@
             </div>
         </div>
     </fieldset>
-</form>
+}
 
 

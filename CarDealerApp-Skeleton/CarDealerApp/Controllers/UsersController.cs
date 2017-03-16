@@ -28,29 +28,38 @@ namespace CarDealerApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Register([Bind(Include = "Username,Email,Password")] User user)
         {
-            if (ModelState.IsValid && db.Users.FirstOrDefault(u => u.Email == user.Email) == null)
+            if (db.Users.FirstOrDefault(u => u.Email == user.Email) != null)
+            {
+                bool emailtaken = true;
+
+                return View(emailtaken);
+            }
+
+            if (ModelState.IsValid)
             {
                 db.Users.Add(user);
                 db.SaveChanges();
-                return Redirect("users/login");
+                return RedirectToAction("Login");
             }
 
-            return View("<h2> user with that e-mail already exist <h2>");
+            return View();
         }
 
+        [HttpGet]
         public ActionResult Login()
         {
             return View();
         }
 
+        [HttpPost]
         public ActionResult Login([Bind(Include = "Username,Password")] User user)
         {
             if (ModelState.IsValid && db.Users.FirstOrDefault(u => u.Username == user.Username) != null)
             {
-                  
+                return RedirectToAction("Index", "Home");
             }
 
-            return View("Login unsuccessful");
+            return View();
         }
     }
 }
