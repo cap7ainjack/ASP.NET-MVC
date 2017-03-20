@@ -1,6 +1,7 @@
 ﻿using CarDealer.Data;
 using CarDealer.Models;
-using CarDealerApp.Models.BindingModels;
+using CarDealer.Models.BindingModels;
+using CarDealer.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,22 +13,22 @@ namespace CarDealerApp.Services
     {
         private CarDealerContext context = new CarDealerContext();
 
-        //public IEnumerable<PartForCarViewModel> GetPartsForDropdown()
-        //{
-        //    var allParts = context.Parts.ToList();
-        //    var partsVms = new List<PartForCarViewModel>();
+        public IEnumerable<PartForCarViewModel> GetPartsForDropdown()
+        {
+            var allParts = context.Parts.ToList();
+            var partsVms = new List<PartForCarViewModel>();
 
-        //    foreach (var part in allParts)
-        //    {
-        //        partsVms.Add(new PartForCarViewModel
-        //        {
-        //            Id = part.Id,
-        //            Name = part.Name
-        //        });
-        //    }
+            foreach (var part in allParts)
+            {
+                partsVms.Add(new PartForCarViewModel
+                {
+                    Id = part.Id,
+                    Name = part.Name
+                });
+            }
 
-        //    return partsVms;
-        //}
+            return partsVms;
+        }
 
         public Car AddNewCar(NewCarBindingModel ncbm, CarDealerContext db)
         {

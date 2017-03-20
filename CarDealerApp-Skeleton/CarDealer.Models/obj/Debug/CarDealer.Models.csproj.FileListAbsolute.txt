@@ -8,3 +8,8 @@ C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\CarDealerApp-Skeleton\CarDe
 C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
 C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
 C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb

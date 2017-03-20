@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutoMapper;
+using CarDealer.Models;
+using CarDealer.Models.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,10 +15,20 @@ namespace CarDealerApp
     {
         protected void Application_Start()
         {
+            RegisterMaps();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+
+        private void RegisterMaps()
+        {
+            Mapper.Initialize(expression =>
+                   {
+                       expression.CreateMap<RegisterUserBm, User>();
+                   }
+            );
         }
     }
 }

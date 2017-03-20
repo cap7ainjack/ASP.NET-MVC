@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace CarDealerApp.Models.ViewModels
+namespace CarDealer.Models.ViewModels
 {
     public class AddUserVM
     {

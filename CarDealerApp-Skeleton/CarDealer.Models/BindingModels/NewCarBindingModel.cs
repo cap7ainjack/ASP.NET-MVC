@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CarDealerApp.Models.BindingModels
+namespace CarDealer.Models.BindingModels
 {
     public class NewCarBindingModel
     {

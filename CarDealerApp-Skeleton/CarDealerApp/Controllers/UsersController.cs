@@ -1,5 +1,9 @@
 ﻿using CarDealer.Data;
 using CarDealer.Models;
+using CarDealer.Models.BindingModels;
+using CarDealer.Models.ViewModels;
+using CarDealerApp.Security;
+using CarDealerApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +15,7 @@ namespace CarDealerApp.Controllers
     public class UsersController : Controller
     {
         private CarDealerContext db = new CarDealerContext();
+        private UserService service = new UserService();
 
         // GET: Users
         public ActionResult Index()
@@ -21,24 +26,35 @@ namespace CarDealerApp.Controllers
         //GET
         public ActionResult Register()
         {
+            var httpCookie = this.Request.Cookies["sessionId"];
+            if (httpCookie != null && AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register([Bind(Include = "Username,Email,Password")] User user)
+        public ActionResult Register([Bind(Include = "Username,Email,Password")] RegisterUserBm userBM)
         {
-            if (db.Users.FirstOrDefault(u => u.Email == user.Email) != null)
+            var httpCookie = this.Request.Cookies["sessionId"];
+            if (httpCookie != null && AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            if (db.Users.FirstOrDefault(u => u.Email == userBM.Email) != null)
             {
                 bool emailtaken = true;
 
                 return View(emailtaken);
             }
 
-            if (ModelState.IsValid)
+            if (ModelState.IsValid )
             {
-                db.Users.Add(user);
-                db.SaveChanges();
+                this.service.RegisterUser(userBM);
                 return RedirectToAction("Login");
             }
 
@@ -48,14 +64,30 @@ namespace CarDealerApp.Controllers
         [HttpGet]
         public ActionResult Login()
         {
+            var httpCookie = this.Request.Cookies["sessionId"];
+            if (httpCookie != null && AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
         [HttpPost]
-        public ActionResult Login([Bind(Include = "Username,Password")] User user)
+        public ActionResult Login([Bind(Include = "Username,Password")] LoginUserBM userBM)
         {
-            if (ModelState.IsValid && db.Users.FirstOrDefault(u => u.Username == user.Username) != null)
+            User user = db.Users.FirstOrDefault(u => u.Username == userBM.Username && u.Password == userBM.Password);
+            var httpCookie = this.Request.Cookies["sessionId"];
+
+            if (httpCookie != null && AuthenticationManager.IsAuthenticated(httpCookie.Value))
             {
+                return RedirectToAction("Index", "Home");
+            }
+
+            if (ModelState.IsValid && user != null)
+            {
+                service.LoginUser(userBM, Session.SessionID);
+                this.Response.SetCookie(new HttpCookie("sessionId", Session.SessionID));
                 return RedirectToAction("Index", "Home");
             }
 

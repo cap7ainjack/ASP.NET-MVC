@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingModels\LoginUserBM.cs" />
+    <Compile Include="BindingModels\NewCarBindingModel.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Login.cs" />
@@ -48,6 +51,9 @@
     <Compile Include="Sale.cs" />
     <Compile Include="Supplier.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="ViewModels\AddUserVM.cs" />
+    <Compile Include="ViewModels\PartForCarViewModel.cs" />
+    <Compile Include="BindingModels\RegisterUserBm.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

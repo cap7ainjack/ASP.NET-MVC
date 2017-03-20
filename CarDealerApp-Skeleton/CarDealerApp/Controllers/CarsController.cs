@@ -8,11 +8,12 @@ using System.Web;
 using System.Web.Mvc;
 using CarDealer.Data;
 using CarDealer.Models;
-using CarDealerApp.Models.BindingModels;
 using CarDealerApp.Services;
+using CarDealer.Models.BindingModels;
 
 namespace CarDealerApp.Controllers
 {
+    [RoutePrefix("Cars")]
     public class CarsController : Controller
     {
         private CarDealerContext db = new CarDealerContext();
@@ -24,7 +25,7 @@ namespace CarDealerApp.Controllers
             return View(db.Cars.ToList());
         }
 
-        [Route("Cars/{id}/parts")]
+        [Route("{id}/parts")]
         public ActionResult Parts(int id)
         {
             Car car = db.Cars.FirstOrDefault(c => c.Id == id);
@@ -38,7 +39,7 @@ namespace CarDealerApp.Controllers
             return View();
         }
 
-        [Route("Cars/{id}")]
+        [Route("{id}")]
         public ActionResult Make(string id)
         {
             IEnumerable<Car> cars = db.Cars.Where(car => car.Make == id).ToArray();
@@ -63,9 +64,13 @@ namespace CarDealerApp.Controllers
 
         // GET: Cars/Create
         //[Authorize]
-        public ActionResult Create()
+        [Route("Add")]
+        public ActionResult Add()
         {
-            return View();
+           // Request.Cookies
+
+            var partsForVM = service.GetPartsForDropdown();
+            return View(partsForVM);
         }
 
         // POST: Cars/Create

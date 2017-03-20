@@ -83,7 +83,25 @@
                @Html.ActionLink("Cars", "index", "Cars")
 
             </div>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>@ViewBag.Username</li>
+                <li>
+                    <a href="/users/register/">Register</a>
+                </li>
+                <li>
+                    <a href="/users/login/">Login</a>
+                </li>
+                <li>
+                    <form method="post" action="/users/logout/">
+                        <input type="submit" value="Logout" class="form-control" />
+                    </form>
+                </li>
+            </ul>
+
         </div>
+
     </div>
     <div class="container body-content">
         @RenderBody()

@@ -144,3 +144,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Ske
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealer.App.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealerApp.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealerApp.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealerApp\bin\AutoMapper.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealerApp\bin\System.ValueTuple.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\CarDealerApp-Skeleton\CarDealerApp\bin\AutoMapper.xml
