@@ -22,11 +22,11 @@ namespace CarDealer.Data
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Login> Logins { get; set; }
 
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Car>().HasMany<Part>(car => car.Parts).WithMany(part => part.Cars);
-        //    modelBuilder.Entity<Supplier>().HasMany<Part>(supplier => supplier.Parts).WithRequired(part => part.Supplier).WillCascadeOnDelete(true);
-        //}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Car>().HasMany<Part>(car => car.Parts).WithMany(part => part.Cars);
+            modelBuilder.Entity<Supplier>().HasMany<Part>(supplier => supplier.Parts).WithRequired(part => part.Supplier).WillCascadeOnDelete(true);
+        }
     }
 
 

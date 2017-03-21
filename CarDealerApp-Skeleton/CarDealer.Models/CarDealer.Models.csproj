@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingModels\AddSaleBm.cs" />
     <Compile Include="BindingModels\LoginUserBM.cs" />
     <Compile Include="BindingModels\NewCarBindingModel.cs" />
     <Compile Include="Car.cs" />
@@ -51,6 +52,10 @@
     <Compile Include="Sale.cs" />
     <Compile Include="Supplier.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="ViewModels\Sales\AddSaleCarVm.cs" />
+    <Compile Include="ViewModels\Sales\AddSaleConfirmationVm.cs" />
+    <Compile Include="ViewModels\Sales\AddSaleCustomerVm.cs" />
+    <Compile Include="ViewModels\Sales\AddSaleVm.cs" />
     <Compile Include="ViewModels\AddUserVM.cs" />
     <Compile Include="ViewModels\PartForCarViewModel.cs" />
     <Compile Include="BindingModels\RegisterUserBm.cs" />

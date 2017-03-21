@@ -94,6 +94,20 @@ namespace CarDealerApp.Controllers
             return View();
         }
 
+        [HttpPost]
+        [Route("users/logout")]
+        public ActionResult Logout()
+        {
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie == null || !AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login");
+            }
+
+            AuthenticationManager.Logout(Request.Cookies.Get("sessionId").Value);
+            return this.RedirectToAction("All", "Cars");
+        }
+
         ////Model state email validation version
         //[HttpPost] 
         //[AllowAnonymous]

@@ -10,6 +10,7 @@ using CarDealer.Data;
 using CarDealer.Models;
 using CarDealerApp.Services;
 using CarDealer.Models.BindingModels;
+using CarDealerApp.Security;
 
 namespace CarDealerApp.Controllers
 {
@@ -67,7 +68,11 @@ namespace CarDealerApp.Controllers
         [Route("Add")]
         public ActionResult Add()
         {
-           // Request.Cookies
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie == null || !Security.AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
 
             var partsForVM = service.GetPartsForDropdown();
             return View(partsForVM);

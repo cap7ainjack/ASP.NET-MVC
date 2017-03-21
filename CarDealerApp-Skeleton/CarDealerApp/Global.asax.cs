@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CarDealer.Models;
 using CarDealer.Models.ViewModels;
+using CarDealer.Models.ViewModels.Sales;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,8 @@ namespace CarDealerApp
             Mapper.Initialize(expression =>
                    {
                        expression.CreateMap<RegisterUserBm, User>();
+                       expression.CreateMap<Car, AddSaleCarVm>();
+                       expression.CreateMap<Customer, AddSaleCustomerVm>();
                    }
             );
         }
