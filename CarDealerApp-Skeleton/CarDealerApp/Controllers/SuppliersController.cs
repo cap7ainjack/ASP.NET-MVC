@@ -21,8 +21,8 @@ namespace CarDealerApp.Controllers
             return View(db.Suppliers.ToList());
         }
 
-        [Route("Suppliers/{supplierType}")]
-        public ActionResult Suppliers(string supplierType)
+        [Route("All/{supplierType}")]
+        public ActionResult All(string supplierType)
         {
             IEnumerable<Supplier> suppliersToShow;
 

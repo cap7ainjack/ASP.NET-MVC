@@ -9,22 +9,12 @@
 
 <form method="post">
     <div class="form-group">
-        <label for="customer">Customer: </label>
-        <select id="customer" class="form-control" name="customerId">
-            @foreach (var customer in Model.Customers)
-            {
-                <option value="@customer.Id">@customer.Name</option>
-            }
-        </select>
+        @Html.Label("Customer: ")
+        @Html.DropDownListFor(vm => vm.Customers, new SelectList(Model.Customers, "Id", "Name"), new { id = "Customer", @class = "form-control" })
     </div>
     <div class="form-group">
         <label for="car">Car: </label>
-        <select id="car" class="form-control" name="carId">
-            @foreach (var car in Model.Cars)
-            {
-                <option value="@car.Id">@car.Make @car.Model</option>
-            }
-        </select>
+        @Html.DropDownListFor(vm => vm.Cars, new SelectList(Model.Cars, "Id", "MakeAndModel"), new { id = "Car", @class = "form-control" })
     </div>
     <div class="form-group">
         <label for="discounts">Car: </label>

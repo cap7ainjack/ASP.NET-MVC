@@ -22,6 +22,7 @@
             }
 
         .dropdown {
+  
             position: relative;
             display: inline-block;
         }
@@ -68,19 +69,51 @@
             </div>
             <div class="dropdown">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+               
+                    <button class="dropbtn" onclick="myFunction()">Sales</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/sales">All</a>
+                        <a href="/sales/discounted">Discounted</a>
+                    </div>
+
+                    @*@Html.ActionLink("Customers", "all/ascending", "Customers")
+                    @Html.ActionLink("Cars", "index", "Cars")*@
+
+                    <li class=" dropdown">
+                        <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+                            Customers
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @Html.ActionLink("Ascending", "All", "Customers", new { order = "ascending" }, null)
+                            </li>
+                            <li>
+                                @Html.ActionLink("Descending", "All", "Customers", new { order = "descending" }, null)
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        @Html.ActionLink("Cars", "Index", "Cars")
+                    </li>
+
+                    <li class=" dropdown">
+                        <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+                            Suppliers
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @Html.ActionLink("Local", "All", "Suppliers", new { supplierType = "local" }, null)
+                            </li>
+                            <li>
+                                @Html.ActionLink("Importers", "All", "Suppliers", new { supplierType = "importers" }, null)
+                            </li>
+                        </ul>
+                    </li>
+                
                 </ul>
-
-                <button class="dropbtn" onclick="myFunction()">Sales</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="/sales">All</a>
-                    <a href="/sales/discounted">Discounted</a>
-                </div>
-
-                @Html.ActionLink("Customers", "all/ascending", "Customers")
-               @Html.ActionLink("Cars", "index", "Cars")
 
             </div>
 

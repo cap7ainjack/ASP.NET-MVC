@@ -30,6 +30,7 @@ namespace CarDealerApp
                        expression.CreateMap<RegisterUserBm, User>();
                        expression.CreateMap<Car, AddSaleCarVm>();
                        expression.CreateMap<Customer, AddSaleCustomerVm>();
+                       expression.CreateMap<Car, AddSaleCarVm>().ForMember(vm => vm.MakeAndModel, configurationExpression => configurationExpression.MapFrom(car => $"{car.Make} {car.Model}"));
                    }
             );
         }
