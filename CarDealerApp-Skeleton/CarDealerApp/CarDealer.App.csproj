@@ -171,7 +171,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -218,6 +220,7 @@
     <Content Include="Views\Users\Register.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Cars\Add.cshtml" />
+    <Content Include="Views\Shared\CarDetailsError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -49,18 +49,26 @@ namespace CarDealerApp.Controllers
         }
 
         // GET: Cars/Details/5
-        public ActionResult Details(int? id)
+
+        [HttpGet]
+        [Route("details/{id}")]
+        [HandleError(View = "CarDetailsError", ExceptionType = typeof(ArgumentOutOfRangeException))]
+       // [Log]
+        public ActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Car car = db.Cars.Find(id);
+            var context = new CarDealerContext();
+            var car = context.Cars.Find(id);
             if (car == null)
             {
-                return HttpNotFound();
+                throw new ArgumentOutOfRangeException(nameof(id), id, $"There is no such element with provided ID.");
             }
-            return View(car);
+            else if (car.TravelledDistance > 1000000)
+            {
+                throw new InvalidOperationException("The car is too old to be displayed");
+            }
+            ViewData["car"] = car;
+
+            return this.View();
         }
 
         // GET: Cars/Create
