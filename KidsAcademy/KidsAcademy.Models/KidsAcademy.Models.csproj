@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="EntityModels\ApplicationUser.cs" />
     <Compile Include="EntityModels\Course.cs" />
+    <Compile Include="EntityModels\Parent.cs" />
     <Compile Include="EntityModels\Student.cs" />
     <Compile Include="EntityModels\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

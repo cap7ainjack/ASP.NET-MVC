@@ -20,6 +20,8 @@ namespace KidsAcademy.Data
 
         public DbSet<Teacher> Teachers { get; set; }
 
+        public DbSet<Parent> Parents { get; set; }
+
         public static KidsAcademyContext Create()
         {
             return new KidsAcademyContext();

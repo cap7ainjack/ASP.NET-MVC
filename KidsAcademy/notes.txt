@@ -1,1 +1,3 @@
 courses -  add duration or somth simillar
+Parent is the default user
+add blog for kids - summer stories or simillar
