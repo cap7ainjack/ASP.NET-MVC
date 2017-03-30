@@ -30,3 +30,34 @@ c:\users\user\documents\visual studio 2015\Projects\KidsAcademy\KidsAcademy.Mode
 c:\users\user\documents\visual studio 2015\Projects\KidsAcademy\KidsAcademy.Models\obj\Debug\KidsAcademy.Models.csprojResolveAssemblyReference.cache
 c:\users\user\documents\visual studio 2015\Projects\KidsAcademy\KidsAcademy.Models\obj\Debug\KidsAcademy.Models.dll
 c:\users\user\documents\visual studio 2015\Projects\KidsAcademy\KidsAcademy.Models\obj\Debug\KidsAcademy.Models.pdb
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\KidsAcademy.Models.dll.config
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\KidsAcademy.Models.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\KidsAcademy.Models.pdb
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\EntityFramework.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.Owin.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Owin.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.Helpers.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.Razor.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.WebPages.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\EntityFramework.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.Owin.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.Helpers.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.Razor.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.WebPages.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\obj\Debug\KidsAcademy.Models.csprojResolveAssemblyReference.cache
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\obj\Debug\KidsAcademy.Models.dll
+C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Models\obj\Debug\KidsAcademy.Models.pdb
