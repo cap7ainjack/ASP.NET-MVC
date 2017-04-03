@@ -10,9 +10,13 @@ namespace KidsAcademy.Web.Attributes
     {
         protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
         {
-            if (filterContext.HttpContext.User.Identity.IsAuthenticated)
+            var roles = this.Roles.Split(',');
+            if (filterContext.HttpContext.User.Identity.IsAuthenticated && !roles.Any(filterContext.HttpContext.User.IsInRole))
             {
-                
+                filterContext.Result = new ViewResult()
+                {
+                    ViewName = "~/Views/Shared/UnAuthorized.cshtml"
+                };
             }
             else
             {

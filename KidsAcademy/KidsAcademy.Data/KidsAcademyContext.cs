@@ -10,7 +10,7 @@ namespace KidsAcademy.Data
     {
 
         public KidsAcademyContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("name=KidsAcademy", throwIfV1Schema: false)
         {
         }
 

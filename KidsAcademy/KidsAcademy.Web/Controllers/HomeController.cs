@@ -1,4 +1,7 @@
-﻿using System;
+﻿using KidsAcademy.Models.ViewModels.Courses;
+using KidsAcademy.Services;
+using KidsAcademy.Web.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,25 +9,21 @@ using System.Web.Mvc;
 
 namespace KidsAcademy.Web.Controllers
 {
+
     public class HomeController : Controller
     {
+        private HomeService service;
+
+        public HomeController()
+        {
+            this.service = new HomeService();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            IEnumerable<CourseVM> vms = service.GetAllCourses();
+            return View(vms);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

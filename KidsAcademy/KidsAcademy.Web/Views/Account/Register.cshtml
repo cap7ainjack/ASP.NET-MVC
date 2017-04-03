@@ -29,6 +29,13 @@
             @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
         </div>
     </div>
+
+@*@foreach (var item in (SelectList)ViewBag.RoleId)
+{
+    <input type="checkbox" name="SelectedRoles" value="@item.Value" class="checkbox-inline" />
+    @Html.Label(item.Value, new { @class = "control-label" })
+}*@
+
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Register" />

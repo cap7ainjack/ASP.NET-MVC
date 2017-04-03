@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 20px;
 }
 
@@ -21,4 +21,26 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#header {
+    background-image: url(http://wallpapercave.com/wp/b6dYvmy.jpg);
+    background-repeat: no-repeat;
+    height: 285px;
+    background-size: 100% 100%;
+}
+
+.navbar.affix {
+    width: 100%;
+    margin-top: -185px;
+}
+
+.course {
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.course-prop{
+    font-size: 15px;
+    color: forestgreen;
 }

@@ -58,3 +58,36 @@ C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Dat
 C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\obj\Debug\KidsAcademy.Data.csprojResolveAssemblyReference.cache
 C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\obj\Debug\KidsAcademy.Data.dll
 C:\Users\boyan.moraliev\Documents\GitHub\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\obj\Debug\KidsAcademy.Data.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\KidsAcademy.Data.dll.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\KidsAcademy.Data.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\KidsAcademy.Data.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\KidsAcademy.Models.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.Mvc.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.Owin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.Razor.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.WebPages.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Owin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\KidsAcademy.Models.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\KidsAcademy.Models.dll.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.Mvc.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\Microsoft.Owin.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.Razor.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.WebPages.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\obj\Debug\KidsAcademy.Data.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\obj\Debug\KidsAcademy.Data.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\obj\Debug\KidsAcademy.Data.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\AutoMapper.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Data\bin\Debug\AutoMapper.xml

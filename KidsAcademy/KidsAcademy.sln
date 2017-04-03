@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsAcademy.Data", "KidsAcademy.Data\KidsAcademy.Data.csproj", "{E0548030-746B-4AAC-B1DF-06812F31A4A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsAcademy.Web", "KidsAcademy.Web\KidsAcademy.Web.csproj", "{B4845333-84FF-4D0E-AC5D-ED4562F6E154}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsAcademy.Models", "KidsAcademy.Models\KidsAcademy.Models.csproj", "{3FA82388-F93A-4546-B592-96E6CDA565E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsAcademy.Services", "KidsAcademy.Services\KidsAcademy.Services.csproj", "{6B13B362-D393-42B5-8855-E1D45D5D52CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3FA82388-F93A-4546-B592-96E6CDA565E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FA82388-F93A-4546-B592-96E6CDA565E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FA82388-F93A-4546-B592-96E6CDA565E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B13B362-D393-42B5-8855-E1D45D5D52CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B13B362-D393-42B5-8855-E1D45D5D52CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B13B362-D393-42B5-8855-E1D45D5D52CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B13B362-D393-42B5-8855-E1D45D5D52CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

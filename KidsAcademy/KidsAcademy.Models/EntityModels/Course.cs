@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KidsAcademy.Models.EntityModels
 {
-   public class Course
+    public class Course
     {
         public Course()
         {
@@ -18,6 +18,10 @@ namespace KidsAcademy.Models.EntityModels
         public string Name { get; set; }
 
         public string Description { get; set; }
+
+        public int Duration { get; set; }
+
+       // public IEnDateTime StartTime { get; set; }
 
         public virtual ApplicationUser Teacher { get; set; }
 
