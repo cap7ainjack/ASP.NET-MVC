@@ -28,6 +28,7 @@ namespace KidsAcademy.Web
             {
                 expression.CreateMap<Course, CourseVM>();
                 expression.CreateMap<Course, DetailsCourseVM>();
+                expression.CreateMap<SubCourse, SubCourseVm>();
             });
         }
     }

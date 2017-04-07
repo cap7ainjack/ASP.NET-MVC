@@ -1,0 +1,41 @@
+﻿@model KidsAcademy.Models.ViewModels.Courses.DetailsCourseVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h3>Описание</h3>
+
+<div>
+    <hr />
+    <span class="course-title">
+        @Html.DisplayFor(model => model.Name)
+    </span>
+
+    <h4>Предмети:</h4>
+    <br />
+
+    @foreach (var subcourse in Model.SubCourses)
+    {
+        <div>
+            <span class="subcourse-Title">@Html.DisplayFor(model => subcourse.Name)</span>
+            <br />
+            <br />
+            <span class="subcourse-prop"><b> @Html.DisplayNameFor(model => subcourse.Description): </b></span>
+            <br />
+            @Html.DisplayFor(model => subcourse.Description)
+            <br />
+            <br />
+            <span class="subcourse-prop"><b>@Html.DisplayNameFor(model => subcourse.HoursPerWeek): </b></span>
+
+            @Html.DisplayFor(model => subcourse.HoursPerWeek)
+            <br />
+            <br />
+            <br />
+        </div>
+
+    }
+
+</div>
+
+@Html.ActionLink("< Назад", "Index", "Home", null, new { @class = "btn btn-lg btn-primary" });

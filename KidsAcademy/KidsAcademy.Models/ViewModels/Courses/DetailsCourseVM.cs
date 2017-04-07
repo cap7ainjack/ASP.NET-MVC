@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KidsAcademy.Models.EntityModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,9 +12,6 @@ namespace KidsAcademy.Models.ViewModels.Courses
     {
         public string Name { get; set; }
 
-        public string Description { get; set; }
-
-        [Display(Name = "Hours per day")]
-        public int Duration { get; set; }
+        public ICollection<SubCourseVm> SubCourses { get; set; }
     }
 }

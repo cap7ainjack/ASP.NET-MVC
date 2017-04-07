@@ -18,6 +18,8 @@ namespace KidsAcademy.Data
 
         public DbSet<Course> Courses { get; set; }
 
+        public DbSet<SubCourse> SubCourses { get; set; }
+
         public DbSet<Teacher> Teachers { get; set; }
 
         public DbSet<Parent> Parents { get; set; }
@@ -28,6 +30,4 @@ namespace KidsAcademy.Data
         }
 
     }
-
-
 }
