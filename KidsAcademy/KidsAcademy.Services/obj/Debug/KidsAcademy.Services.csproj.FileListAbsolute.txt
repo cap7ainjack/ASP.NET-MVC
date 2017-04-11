@@ -6,7 +6,6 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\Kids
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\KidsAcademy.Data.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\KidsAcademy.Models.dll
-C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\System.Web.Mvc.dll
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Services\bin\Debug\Microsoft.Owin.dll

@@ -1,22 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KidsAcademy.Models.EntityModels
 {
     public class Student
     {
-        public Student()
-        {
-            this.Courses = new HashSet<Course>();
-        }
+        //public Student()
+        //{
+        //    this.Courses = new HashSet<Course>();
+        //}
 
         public int Id { get; set; }
 
+        public DateTime Birthdate { get; set; }
+
+        public string Adress { get; set; }
+
+        public StudentShift StudentShift { get; set; }
+
         public virtual ApplicationUser User { get; set; }
 
-        public virtual ICollection<Course> Courses { get; set; }
+        public virtual Course Course { get; set; }
     }
 }

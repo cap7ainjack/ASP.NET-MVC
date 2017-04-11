@@ -10,6 +10,8 @@ namespace KidsAcademy.Models.EntityModels
     {
        public int Id { get; set; }
 
+        public string PhoneNumber { get; set; }
+
        public virtual ApplicationUser User { get; set; }
 
        public virtual ICollection<Student> Kids { get; set; }

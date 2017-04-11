@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using KidsAcademy.Models.ViewModels.Account;
 using KidsAcademy.Models.EntityModels;
+using KidsAcademy.Services;
 
 namespace KidsAcademy.Web.Controllers
 {
@@ -18,9 +19,11 @@ namespace KidsAcademy.Web.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private AccountService service;
 
         public AccountController()
         {
+            this.service = new AccountService();
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
@@ -157,6 +160,8 @@ namespace KidsAcademy.Web.Controllers
                 if (result.Succeeded)
                 {
                     this.UserManager.AddToRole(user.Id, "Parent");
+                    this.service.CreateParent(user);
+
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
