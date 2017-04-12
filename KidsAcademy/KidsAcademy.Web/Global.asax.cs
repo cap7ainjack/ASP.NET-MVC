@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using KidsAcademy.Models.BindingModels;
 using KidsAcademy.Models.EntityModels;
 using KidsAcademy.Models.ViewModels.Courses;
+using KidsAcademy.Models.ViewModels.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,15 @@ namespace KidsAcademy.Web
                 expression.CreateMap<Course, CourseVM>();
                 expression.CreateMap<Course, DetailsCourseVM>();
                 expression.CreateMap<SubCourse, SubCourseVm>();
+
+                expression.CreateMap<AddStudentBM, Student>()
+                    .ForMember(c => c.Course,
+                        opt => opt.MapFrom(o =>
+                           new Data.KidsAcademyContext().Courses.Find(o.Course)
+                                          )
+                        );
+
+
             });
         }
     }

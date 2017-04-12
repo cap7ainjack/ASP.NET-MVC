@@ -1,4 +1,6 @@
-﻿using KidsAcademy.Models.ViewModels.User;
+﻿using KidsAcademy.Models.BindingModels;
+using KidsAcademy.Models.EntityModels;
+using KidsAcademy.Models.ViewModels.User;
 using KidsAcademy.Services;
 using System;
 using System.Collections.Generic;
@@ -32,13 +34,19 @@ namespace KidsAcademy.Web.Controllers
             return this.View(model);
         }
 
-        //[HttpPost]
-        //[Route("enroll")]
-        //public ActionResult Enroll()
-        //{
-        //    string userName = this.User.Identity.Name;
+        [HttpPost]
+        [Route("enroll")]
+        public ActionResult Enroll([Bind(Include = "Birthdate, Adress, Course")] AddStudentBM student)
+        {
+            string userName = this.User.Identity.Name;
+            
+            if (ModelState.IsValid)
+            {
+                this.service.AddStudent(student, userName);
+                return Redirect("Home/index");
+            }
 
-        //    return this.View();
-        //}
+            return View("Error");
+        }
     }
 }

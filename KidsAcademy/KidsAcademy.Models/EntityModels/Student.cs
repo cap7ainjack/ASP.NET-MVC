@@ -16,7 +16,9 @@ namespace KidsAcademy.Models.EntityModels
 
         public string Adress { get; set; }
 
-        public StudentShift StudentShift { get; set; }
+        //public StudentShift StudentShift { get; set; }
+
+        public Parent Parent { get; set; }
 
         public virtual ApplicationUser User { get; set; }
 
