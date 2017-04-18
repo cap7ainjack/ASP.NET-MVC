@@ -12,6 +12,7 @@ namespace KidsAcademy.Services
         {
             IEnumerable<Course> coursees = this.Context.Courses;
             IEnumerable<CourseVM> vms = Mapper.Map<IEnumerable<Course>, IEnumerable<CourseVM>> (coursees);
+            //IEnumerable<CourseVM> vms = new HashSet<CourseVM>();
             return vms;
         }
     }

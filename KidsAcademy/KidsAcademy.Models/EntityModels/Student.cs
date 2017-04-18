@@ -1,16 +1,21 @@
-﻿using System;
+﻿using KidsAcademy.Models.Enums;
+using System;
 using System.Collections.Generic;
 
 namespace KidsAcademy.Models.EntityModels
 {
     public class Student
     {
-        //public Student()
-        //{
-        //    this.Courses = new HashSet<Course>();
-        //}
+        public Student()
+        {
+            this.SubCoursesGrades = new List<SubCourseGrade>();
+        }
 
         public int Id { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
 
         public DateTime Birthdate { get; set; }
 
@@ -20,8 +25,11 @@ namespace KidsAcademy.Models.EntityModels
 
         public Parent Parent { get; set; }
 
-        public virtual ApplicationUser User { get; set; }
+        public int Course { get; set; }
 
-        public virtual Course Course { get; set; }
+        public virtual IList<SubCourseGrade> SubCoursesGrades { get; set; }
+        //public virtual Course Course { get; set; }
+
+        public virtual ApplicationUser User { get; set; }
     }
 }

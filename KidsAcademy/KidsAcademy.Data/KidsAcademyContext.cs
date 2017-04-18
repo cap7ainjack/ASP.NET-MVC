@@ -24,6 +24,8 @@ namespace KidsAcademy.Data
 
         public DbSet<Parent> Parents { get; set; }
 
+        public DbSet<SubCourseGrade> SubCoursesGrades { get; set; }
+
         public static KidsAcademyContext Create()
         {
             return new KidsAcademyContext();

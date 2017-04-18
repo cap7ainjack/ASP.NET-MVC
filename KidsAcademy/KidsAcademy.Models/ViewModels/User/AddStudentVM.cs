@@ -27,8 +27,8 @@ namespace KidsAcademy.Models.ViewModels.User
         [Display(Name = "Клас")]
         public Course Course { get; set; }
 
-        [Display(Name = "Смяна")]
-        public StudentShift StudentShift { get; set; }
+        //[Display(Name = "Смяна")]
+        //public StudentShift StudentShift { get; set; }
 
         public IEnumerable<Course> Courses { get; set; }
     }

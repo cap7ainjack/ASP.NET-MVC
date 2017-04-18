@@ -36,17 +36,24 @@ namespace KidsAcademy.Web.Controllers
 
         [HttpPost]
         [Route("enroll")]
-        public ActionResult Enroll([Bind(Include = "Birthdate, Adress, Course")] AddStudentBM student)
+        public ActionResult Enroll([Bind(Include = "FirstName, LastName,Birthdate, Adress, Course")] AddStudentBM student)
         {
             string userName = this.User.Identity.Name;
-            
+
             if (ModelState.IsValid)
             {
                 this.service.AddStudent(student, userName);
-                return Redirect("Home/index");
+                return RedirectToAction("Profile");
             }
 
             return View("Error");
+        }
+        public ActionResult Profile()
+        {
+            string userName = this.User.Identity.Name;
+            ParentProfileVM vm = this.service.GetProfileVM(userName);
+
+            return this.View();
         }
     }
 }
