@@ -8,6 +8,11 @@ namespace KidsAcademy.Models.EntityModels
 {
    public class Parent
     {
+       public Parent()
+       {
+           this.Kids = new HashSet<Student>();
+       }
+
        public int Id { get; set; }
 
         public string PhoneNumber { get; set; }

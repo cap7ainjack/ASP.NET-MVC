@@ -8,7 +8,7 @@ namespace KidsAcademy.Models.EntityModels
     {
         public Student()
         {
-            this.SubCoursesGrades = new List<SubCourseGrade>();
+            this.SubCoursesGrades = new HashSet<SubCourseGrade>();
         }
 
         public int Id { get; set; }
@@ -27,7 +27,7 @@ namespace KidsAcademy.Models.EntityModels
 
         public int Course { get; set; }
 
-        public virtual IEnumerable<SubCourseGrade> SubCoursesGrades { get; set; }
+        public virtual ICollection<SubCourseGrade> SubCoursesGrades { get; set; }
 
         public virtual ApplicationUser User { get; set; }
     }

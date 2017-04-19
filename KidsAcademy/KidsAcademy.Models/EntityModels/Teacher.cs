@@ -8,6 +8,12 @@ namespace KidsAcademy.Models.EntityModels
 {
    public class Teacher 
     {
+       public Teacher()
+       {
+           this.Students = new HashSet<Student>();
+           this.Courses = new HashSet<Course>();
+       }
+
         public int Id { get; set; }
 
         public virtual ApplicationUser User { get; set; }
