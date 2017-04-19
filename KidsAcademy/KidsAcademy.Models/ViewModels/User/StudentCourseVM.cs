@@ -15,6 +15,6 @@ namespace KidsAcademy.Models.ViewModels.User
 
         public int Course { get; set; }
 
-        public IEnumerable<ProfileSubCourseVM> SubCourses { get; set; }
+        public IEnumerable<ProfileSubCourseVM> SubCoursesGrades { get; set; }
     }
 }

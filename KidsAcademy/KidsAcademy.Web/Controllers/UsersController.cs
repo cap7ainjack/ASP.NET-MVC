@@ -48,12 +48,13 @@ namespace KidsAcademy.Web.Controllers
 
             return View("Error");
         }
+
         public ActionResult Profile()
         {
             string userName = this.User.Identity.Name;
             ParentProfileVM vm = this.service.GetProfileVM(userName);
 
-            return this.View();
+            return this.View(vm);
         }
     }
 }

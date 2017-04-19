@@ -41,10 +41,9 @@ namespace KidsAcademy.Services
         {
             ApplicationUser currentUser = this.Context.Users.FirstOrDefault(x => x.UserName == userName);
             ParentProfileVM vm = Mapper.Map<ApplicationUser, ParentProfileVM>(currentUser);
-            Parent currentParrent = this.Context.Parents.FirstOrDefault(parent => parent.User == currentUser);
+            Parent currentParrent = this.Context.Parents.FirstOrDefault(parent => parent.User.Id == currentUser.Id);
             vm.Kids = Mapper.Map<IEnumerable<Student>, IEnumerable<StudentCourseVM>>(currentParrent.Kids);
             
-
             return vm;
         }
     }

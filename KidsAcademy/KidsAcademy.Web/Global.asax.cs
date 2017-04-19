@@ -41,7 +41,7 @@ namespace KidsAcademy.Web
 
                 expression.CreateMap<AddStudentBM, Student>();
                 expression.CreateMap<ApplicationUser, ParentProfileVM>();
-                expression.CreateMap<IEnumerable<Student>, IEnumerable<StudentCourseVM>>();
+                expression.CreateMap<Student,StudentCourseVM>();
             });
         }
     }

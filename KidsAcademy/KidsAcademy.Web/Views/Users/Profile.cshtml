@@ -1,8 +1,36 @@
-﻿@model KidsAcademy.Models.ViewModels.User.ProfileVM
+﻿@model KidsAcademy.Models.ViewModels.User.ParentProfileVM
 
 @{ 
     ViewBag.Title = "Profile Page";
 }
 
-<h2>Profile: </h2>
+<h2>Profile page: </h2>
 
+<h3>NameL @Html.DisplayFor(vm => vm.FistName)</h3>
+<h3>Email @Html.DisplayFor(vm => vm.Email)</h3>
+
+<br/>
+
+@foreach (var kid in Model.Kids)
+{
+    @Html.DisplayFor(vm => kid.FirstName)
+
+
+<table class="table table-striped" >
+    <tr>
+        <th>Предмед</th>
+        <th>Оценка</th>
+    </tr>
+
+    @foreach (var subcourse in kid.SubCoursesGrades)
+    {
+        <tr>
+            <td>@Html.DisplayFor(vm => subcourse.Name)</td>
+            <td>@Html.DisplayFor(vm => subcourse.Grade)</td>
+        </tr>
+    }
+</table>
+}
+
+
+@Html.ActionLink("Начало", "Index", "Home");

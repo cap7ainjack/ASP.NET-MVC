@@ -27,8 +27,7 @@ namespace KidsAcademy.Models.EntityModels
 
         public int Course { get; set; }
 
-        public virtual IList<SubCourseGrade> SubCoursesGrades { get; set; }
-        //public virtual Course Course { get; set; }
+        public virtual IEnumerable<SubCourseGrade> SubCoursesGrades { get; set; }
 
         public virtual ApplicationUser User { get; set; }
     }
