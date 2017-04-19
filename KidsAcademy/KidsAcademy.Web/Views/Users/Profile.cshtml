@@ -4,17 +4,18 @@
     ViewBag.Title = "Profile Page";
 }
 
-<h2>Profile page: </h2>
+<h2>Профилна страница: </h2>
 
-<h3>NameL @Html.DisplayFor(vm => vm.FistName)</h3>
-<h3>Email @Html.DisplayFor(vm => vm.Email)</h3>
+<h3>Име: @Html.DisplayFor(vm => vm.FirstName)</h3>
+<h3>Email: @Html.DisplayFor(vm => vm.Email)</h3>
 
 <br/>
 
 @foreach (var kid in Model.Kids)
 {
-    @Html.DisplayFor(vm => kid.FirstName)
-
+    <span class="kid-name">
+        @Html.DisplayFor(vm => kid.FirstName)
+    </span>
 
 <table class="table table-striped" >
     <tr>

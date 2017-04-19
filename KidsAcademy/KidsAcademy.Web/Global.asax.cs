@@ -42,9 +42,13 @@ namespace KidsAcademy.Web
                 expression.CreateMap<AddStudentBM, Student>();
                 expression.CreateMap<ApplicationUser, ParentProfileVM>();
 
-                expression.CreateMap<Student,StudentCourseVM>()
-                    .ForMember(k => k.SubCoursesGrades,
-                        opt => opt.MapFrom(s => s.SubCoursesGrades));
+                expression.CreateMap<Student, StudentCourseVM>()
+                    .ForMember(vm => vm.SubCoursesGrades,
+                        stu => stu.MapFrom(s => s.SubCoursesGrades));
+
+                expression.CreateMap<SubCourseGrade, ProfileSubCourseVM>()
+                     .ForMember(vm => vm.Name,
+                        ent => ent.MapFrom(e => new Data.KidsAcademyContext().SubCourses.Find(e.Id).Name));
             });
         }
     }

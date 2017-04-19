@@ -9,7 +9,7 @@ namespace KidsAcademy.Models.ViewModels.User
 {
    public class ParentProfileVM
     {
-        public string FistName { get; set; }
+        public string FirstName { get; set; }
 
         public string Email { get; set; }
 

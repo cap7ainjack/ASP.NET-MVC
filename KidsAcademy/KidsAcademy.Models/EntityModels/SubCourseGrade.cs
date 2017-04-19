@@ -11,9 +11,9 @@ namespace KidsAcademy.Models.EntityModels
     {
         public int Id { get; set; }
 
-        public int Student { get; set; }
+        //public int Student { get; set; }
 
-        public int SubCourse { get; set; }
+        public virtual SubCourse SubCourse { get; set; }
 
         public Grade Grade { get; set; }
     }

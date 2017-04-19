@@ -17,5 +17,7 @@ namespace KidsAcademy.Models.EntityModels
         public int HoursPerWeek { get; set; }
 
         public virtual Course Course { get; set; }
+
+
     }
 }

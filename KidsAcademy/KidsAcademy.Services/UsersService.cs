@@ -46,5 +46,15 @@ namespace KidsAcademy.Services
             
             return vm;
         }
+
+        public EditUserVM GetEditVM(string userName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EditUser(EditUserBM bm, string userName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BindingModels\AddStudentBM.cs" />
+    <Compile Include="BindingModels\EditUserBM.cs" />
     <Compile Include="EntityModels\ApplicationUser.cs" />
     <Compile Include="EntityModels\Course.cs" />
     <Compile Include="EntityModels\Parent.cs" />
@@ -118,6 +119,7 @@
     <Compile Include="ViewModels\Manage\SetPasswordViewModel.cs" />
     <Compile Include="ViewModels\Manage\VerifyPhoneNumberViewModel.cs" />
     <Compile Include="ViewModels\User\AddStudentVM.cs" />
+    <Compile Include="ViewModels\User\EditUserVM.cs" />
     <Compile Include="ViewModels\User\ParentProfileVM.cs" />
     <Compile Include="ViewModels\User\StudentCourseVM.cs" />
     <Compile Include="ViewModels\User\ProfileSubCourseVM.cs" />

@@ -56,5 +56,31 @@ namespace KidsAcademy.Web.Controllers
 
             return this.View(vm);
         }
+
+        [HttpGet]
+        [Route("Edit")]
+        public ActionResult Edit()
+        {
+            string userName = this.User.Identity.Name;
+            EditUserVM vm = this.service.GetEditVM(userName);
+
+            return this.View(vm);
+        }
+
+        [HttpPost]
+        [Route("Edit")]
+        public ActionResult Edit(EditUserBM bm)
+        {
+            string userName = this.User.Identity.Name;
+
+            if (this.ModelState.IsValid)
+            {
+                this.service.EditUser(bm,userName);
+                return this.RedirectToAction("Profile");
+            }
+
+            EditUserVM vm = this.service.GetEditVM(userName);
+            return this.View(vm);
+        }
     }
 }
