@@ -1,0 +1,29 @@
+﻿@model IEnumerable<KidsAcademy.Models.ViewModels.Blog.ArticleVM>
+
+@*@{
+    Layout = "~/Views/Shared/_layout.cshtml";
+}*@
+
+<h2>BLOG </h2>
+@if (User.IsInRole("Student"))
+{
+    @Html.Action("Add", "Add");
+}
+
+<section>
+    @foreach (var vm in Model)
+    {
+        <article>
+            <h3>@Html.DisplayFor(vms => vm.Title)</h3>
+            <p>
+                @Html.DisplayFor(vms => vm.Content)
+            </p>
+            <br />
+            <hr />
+            <br />
+            <span class="author">@Html.DisplayFor(vms => vm.Author.Name)</span>
+            <span class="author">@Html.DisplayFor(vms => vm.PublishDate)</span>
+        </article>
+    }
+
+</section>

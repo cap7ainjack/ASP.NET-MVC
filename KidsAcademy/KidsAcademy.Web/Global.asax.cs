@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using KidsAcademy.Models.BindingModels;
 using KidsAcademy.Models.EntityModels;
+using KidsAcademy.Models.ViewModels.Blog;
 using KidsAcademy.Models.ViewModels.Courses;
 using KidsAcademy.Models.ViewModels.User;
 using System;
@@ -49,6 +50,10 @@ namespace KidsAcademy.Web
                 expression.CreateMap<SubCourseGrade, ProfileSubCourseVM>()
                      .ForMember(vm => vm.Name,
                         ent => ent.MapFrom(e => new Data.KidsAcademyContext().SubCourses.Find(e.Id).Name));
+
+                expression.CreateMap<ApplicationUser, EditUserVM>();
+                expression.CreateMap<Article, ArticleVM>();
+                expression.CreateMap<ApplicationUser, ArticleAuthorVM>();
             });
         }
     }

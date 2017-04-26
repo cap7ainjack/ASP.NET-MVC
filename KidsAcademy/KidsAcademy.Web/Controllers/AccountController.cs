@@ -15,6 +15,7 @@ using KidsAcademy.Services;
 namespace KidsAcademy.Web.Controllers
 {
     [Authorize]
+    [RoutePrefix("Account")]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
@@ -59,6 +60,7 @@ namespace KidsAcademy.Web.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
+        [Route("login")]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -70,6 +72,7 @@ namespace KidsAcademy.Web.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [Route("login")]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
@@ -141,6 +144,7 @@ namespace KidsAcademy.Web.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
+        [Route("register")]
         public ActionResult Register()
         {
             return View();
@@ -151,6 +155,7 @@ namespace KidsAcademy.Web.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        [Route("register")]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -396,6 +401,7 @@ namespace KidsAcademy.Web.Controllers
         // POST: /Account/LogOff
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("logoff")]
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);

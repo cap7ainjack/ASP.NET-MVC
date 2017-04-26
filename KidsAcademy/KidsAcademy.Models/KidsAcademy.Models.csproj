@@ -86,9 +86,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingModels\AddArticleBM.cs" />
     <Compile Include="BindingModels\AddStudentBM.cs" />
     <Compile Include="BindingModels\EditUserBM.cs" />
     <Compile Include="EntityModels\ApplicationUser.cs" />
+    <Compile Include="EntityModels\Article.cs" />
     <Compile Include="EntityModels\Course.cs" />
     <Compile Include="EntityModels\Parent.cs" />
     <Compile Include="EntityModels\Student.cs" />
@@ -107,6 +109,8 @@
     <Compile Include="ViewModels\Account\ResetPasswordViewModel.cs" />
     <Compile Include="ViewModels\Account\SendCodeViewModel.cs" />
     <Compile Include="ViewModels\Account\VerifyCodeViewModel.cs" />
+    <Compile Include="ViewModels\Blog\ArticleAuthorVM.cs" />
+    <Compile Include="ViewModels\Blog\ArticleVM.cs" />
     <Compile Include="ViewModels\Courses\CourseVM.cs" />
     <Compile Include="ViewModels\Courses\DetailsCourseVM.cs" />
     <Compile Include="ViewModels\Courses\SubCourseVm.cs" />

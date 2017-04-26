@@ -49,12 +49,19 @@ namespace KidsAcademy.Services
 
         public EditUserVM GetEditVM(string userName)
         {
-            throw new NotImplementedException();
+            ApplicationUser user = this.Context.Users.FirstOrDefault(u => u.UserName == userName);
+            EditUserVM vm = Mapper.Map<ApplicationUser, EditUserVM>(user);
+            return vm;
         }
 
         public void EditUser(EditUserBM bm, string userName)
         {
-            throw new NotImplementedException();
+            ApplicationUser user = this.Context.Users.FirstOrDefault(u => u.UserName == userName);
+            user.FirstName = bm.FirstName;
+            user.LastName = bm.LastName;
+            user.Email = bm.Email;
+            user.PhoneNumber = bm.PhoneNumber;
+            this.Context.SaveChanges();
         }
     }
 }
