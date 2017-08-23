@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using KidsAcademy.Models.BindingModels;
 using KidsAcademy.Models.EntityModels;
+using KidsAcademy.Models.ViewModels.Admin;
 using KidsAcademy.Models.ViewModels.Blog;
 using KidsAcademy.Models.ViewModels.Courses;
 using KidsAcademy.Models.ViewModels.User;
@@ -54,6 +55,8 @@ namespace KidsAcademy.Web
                 expression.CreateMap<ApplicationUser, EditUserVM>();
                 expression.CreateMap<Article, ArticleVM>();
                 expression.CreateMap<ApplicationUser, ArticleAuthorVM>();
+                expression.CreateMap<AddArticleBM, Article>();
+                expression.CreateMap<ApplicationUser, AdminPageUserVM>();
             });
         }
     }

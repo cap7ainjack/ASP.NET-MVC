@@ -307,3 +307,10 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\Kids
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\KidsAcademy.Services.pdb
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\KidsAcademy.Services.dll.config
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\AutoMapper.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\Ninject.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\Ninject.Web.Common.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\WebActivatorEx.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\Ninject.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\Ninject.Web.Common.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET-MVC\KidsAcademy\KidsAcademy.Web\bin\Ninject.Web.Mvc.xml

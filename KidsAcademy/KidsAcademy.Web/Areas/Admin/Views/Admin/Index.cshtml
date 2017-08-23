@@ -1,0 +1,32 @@
+﻿@model KidsAcademy.Models.ViewModels.Admin.AdminPageVM
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Контролен Панел</h2>
+
+@Html.ActionLink("Добави нов клас", "AddCourse", null, new { @class = "btn btn-lg" })
+<div class="row">
+    <div class="col-sm-5 bordered">
+        <h3>Класове:</h3>
+        <br />
+        @foreach (var course in Model.Courses)
+        {
+            <div class="admin-course">
+                <h4>@Html.DisplayFor(vm => course.Name)</h4>
+                @Html.ActionLink("Edit", "EditCourse", new { id = course.Id }, new { @class = "btn btn-sm btn-warning" })
+            </div>
+        }
+    </div>
+    <div class="col-sm-5 bordered">
+        <h3>Потребители:</h3>
+        <br/>
+        @foreach (var user in Model.Users)
+        {
+            <div class="admin-user">
+                <h4>@Html.DisplayFor(vm => user.FirstName) @Html.DisplayFor(vm => user.LastName)</h4>
+                @Html.ActionLink("Edit", "EditCourse", new { id = user.Id }, new { @class = "btn btn-sm btn-warning" })
+            </div>
+        }
+    </div>
+</div>

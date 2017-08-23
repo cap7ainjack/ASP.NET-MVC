@@ -39,8 +39,9 @@ namespace KidsAcademy.Web.Areas.Blog.Controllers
         {
             if (this.ModelState.IsValid)
             {
-
-              return  RedirectToAction("Articles");
+                string username = this.User.Identity.Name;
+                this.service.AddNewArtice(bm, username);
+                return RedirectToAction("Articles");
             }
 
             return this.View();

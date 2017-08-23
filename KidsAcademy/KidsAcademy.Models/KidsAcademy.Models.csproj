@@ -109,6 +109,9 @@
     <Compile Include="ViewModels\Account\ResetPasswordViewModel.cs" />
     <Compile Include="ViewModels\Account\SendCodeViewModel.cs" />
     <Compile Include="ViewModels\Account\VerifyCodeViewModel.cs" />
+    <Compile Include="ViewModels\Admin\AddSubCourseVM.cs" />
+    <Compile Include="ViewModels\Admin\AdminPageVM.cs" />
+    <Compile Include="ViewModels\Admin\AdminPageUserVM.cs" />
     <Compile Include="ViewModels\Blog\ArticleAuthorVM.cs" />
     <Compile Include="ViewModels\Blog\ArticleVM.cs" />
     <Compile Include="ViewModels\Courses\CourseVM.cs" />
